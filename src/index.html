@@ -17,34 +17,136 @@
         <div class="row">
             <a href="" class="col-md-2"> <img src="icons/fms_logo.svg" alt="FMS_logo"> </a>
             <div class="col-md-8 offset-2">
-                <ul>
-                    <a href="">Главная</a>
-                    <a href="">Услуги</a>
-                    <a href="">О нас</a>
-                    <a href="">Наши работы</a>
+                <ul class="a1">
+                    <a href="#main">Главная</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#about_us">О нас</a>
+                    <a href="#works">Наши работы</a>
                     <img src="icons/border-navbar.svg" alt="border">
-                    <a href=""> <img src="icons/phone.svg" alt="phone">  +7 (701) 999 76 60</a>
+                    <a href="tel:+77019997660"> +7 (701) 999 76 60</a>
                 </ul>
             </div>
         </div>
     </div>
 </header>
-<section class="main">
+<section class="main" id="main">
     <div class="container">
         <h1 class="col-md-7">Иновации для повышения эффективности производства</h1>
         <h2 class="col-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h2>
         <button>Оставить заявку</button>
     </div>
 </section>
-<section class="services">
+<section class="services" id="services">
     <div class="container">
-        <h1 class="title">Услуги </h1>
+        <h1 class="title">Услуги <br> <img src="icons/border-bottom.svg" alt="border"></h1>
+        <div class="services__content">
+            <a href="" class="services__content-item page1">
+                <p>Проектирование</p>
+                <button>Подробнее</button>
+            </a>
+            <div class="services__content-item page2">
+                <p>Строительная деятельность</p>
+                <button>Подробнее</button>
+            </div>
+            <div class="services__content-item page3">
+                <p>Очистка РВС</p>
+                <button>Подробнее</button>
+            </div>
+        </div>  
+    </div>
+</section>
+<section class="about_us" id="about_us">
+    <div class="container">
+        <h1 class="title">О Нас <br> <img src="icons/border-bottom.svg" alt="border"></h1>
         <div class="row">
-            
+            <div class="about_us__description col-md-4">
+                <p> <span>ТОО «Фар-Ма Сервис»</span> выполняет все виды работ: от предпроектных исследований и согласований, до проектирования, строительства и сдачи объектов «под ключ».</p>
+                <p>Компания динамично развивается и всегда нацелена на достижение наивысшего результата. У нас есть опыт, средства, знания и масса идей.</p>
+            </div>
+            <img src="img/about_us.svg" alt="about_us" class="about_us__img col-md-8">
         </div>
     </div>
 </section>
-
+<section class="works" id="works">
+    <div class="container">
+        <h1 class="title">Наши работы <br> <img src="icons/border-bottom.svg" alt="border"></h1>
+        <div class="works__content">
+            <div class="works__content-item col-md-6">
+                <img src="img/works1.svg" alt="works1">
+                <div>Капитальный ремонт технологических трубопроводов с устройством сплошной латки</div>
+                <p>АО ОзенМунайГаз</p>
+            </div>
+            <div class="works__content-item col-md-6">
+                <img src="img/works2.svg" alt="works2">
+                <div>Реконструкция существующих внутри-промысловых ВЛ 10/6/0,4 кв на м/р УАЗ НГДУ Кайнармунайгаз</div>
+                <p>АО ЭмбаМунайГаз</p>
+            </div>
+            <div class="works__content-item col-md-6">
+                <img src="img/works3.svg" alt="works3">
+                <div>Теплоизоляция емкостей отстойников 3,4 на КПАН НГДУ-4 "Озенмунайгаз"</div>
+                <p>АО ОзенМунайГаз</p>
+            </div>
+            <div class="works__content-item col-md-6">
+                <img src="img/works4.svg" alt="works4">
+                <div>Строительство нефтепровода протяженностью 308 км и объектов на трассе нефтепровода, на месторождении Култук</div>
+                <p>АО ЭмбаМунайГаз</p>
+            </div>
+            <div class="works__content-item col-md-6">
+                <img src="img/works5.svg" alt="works5">
+                <div>Строительство нефтепровода протяженностью 308 км и объектов на трассе нефтепровода, на месторождении Култук</div>
+                <p>АО ЭмбаМунайГаз</p>
+            </div>
+            <div class="works__content-item col-md-6">
+                <img src="img/works6.svg" alt="works6">
+                <div>Строительство нефтепровода протяженностью 308 км и объектов на трассе нефтепровода, на месторождении Култук</div>
+            </div>
+            <div class="works__content-item col-md-6">
+                <img src="img/works7.svg" alt="works7">
+                <div>Строительство нефтепровода протяженностью 308 км и объектов на трассе нефтепровода, на месторождении Култук</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="request">
+    <div class="container">
+        <div class="request__title">Оставьте заявку и мы обязательно свяжемся с вами!</div>
+        <div class="request__form">
+            <form action="">
+                <input name="name" required placeholder="Ваше имя" type="text" maxlength="20" class="name">
+                <input name="phone" required type="tel" placeholder="Ваш телефон" maxlength="20" class="phone">
+                <input type="submit" value="Отправить"> 
+            </form>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer__1 col-md-3">
+                <a href=""> <img src="icons/fms_logo.svg" alt="Farma-Service_logo"> </a>
+                <p>Инженерные решения проектных и технических задачдля различных отраслей промышленности</p>
+            </div>
+            <div class="footer__2 offset-1 col-md-3">
+                <p>навигация по сайту</p>
+                <div class="a1">
+                    <a href="#main">Главная</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#about_us">О нас</a>
+                    <a href="#works">Наши работы</a>
+                </div>
+            </div>
+            <div class="footer__3 col-md-3 offset-1">
+                <div>
+                <p class="footer__3-title">контакты</p>
+                <a href="mailto:support@blammo.kz" class="footer__3-email"> <img src="icons/email.svg" alt="email"> info@far-maservice.com</a>
+                <a href="tel:+77019997660" class="footer__3-phone"> <img src="icons/phone.svg" alt="phone"> +7 (712) 252 11 35</a>
+                <a href="#" class="footer__3-location"> <img src="icons/location.svg" alt="location"> г. Атырау, ул Дружбы 7А</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>  
 </body>
