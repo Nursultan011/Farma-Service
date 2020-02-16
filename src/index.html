@@ -12,10 +12,32 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <!-- <section class="active__header">
+        <div class="active__menu">
+            <div class="a1">
+                <a href="#main" class="close_navbar">Главная</a>
+                <a href="#services" class="close_navbar">Наши услуги</a>
+                <a href="#offer" class="close_navbar">Сравнение</a>
+                <a href="#about" class="close_navbar">О нас</a>
+                <a href="#stages" class="close_navbar">Упаковка бизнеса</a>
+                <a href="#request" class="close_navbar">Обратная связь</a>
+            </div>
+            <div class="a2">
+                <a href="tel:+77019997660"> <img src="icons/phone.svg" alt="phone"> +7 (701) 999 76 60 </a>
+                <a href="mailto:support@blammo.kz"> <img src="icons/mail.svg" alt="email"> blommo@gmail.com </a>
+            </div>
+            <div class="close-btn">
+                <a href="javascript:void(0)">X</a>
+            </div>
+        </div>
+    </section> -->
 <header class="header">
     <div class="container">
         <div class="row">
-            <a href="" class="col-md-2"> <img src="icons/fms_logo.svg" alt="FMS_logo"> </a>
+            <a href="" class=""> <img src="icons/fms_logo.svg" alt="FMS_logo"> </a>
+            <div class="hamburger">
+                <img src="icons/burger.svg" alt="hamburger">
+            </div>
             <div class="col-md-8 offset-2">
                 <ul class="a1">
                     <a href="#main">Главная</a>
@@ -29,16 +51,16 @@
         </div>
     </div>
 </header>
-<section class="main" id="main">
+<section class="main a1" id="main">
     <div class="container">
         <h1 class="col-md-7">Иновации для повышения эффективности производства</h1>
         <h2 class="col-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h2>
-        <button>Оставить заявку</button>
+        <a href="#request"><button>Оставить заявку</button></a>
     </div>
 </section>
 <section class="services" id="services">
     <div class="container">
-        <h1 class="title">Услуги <br> <img src="icons/border-bottom.svg" alt="border"></h1>
+        <h1 class="title">Услуги</h1>
         <div class="services__content">
             <a href="" class="services__content-item page1">
                 <p>Проектирование</p>
@@ -57,19 +79,37 @@
 </section>
 <section class="about_us" id="about_us">
     <div class="container">
-        <h1 class="title">О Нас <br> <img src="icons/border-bottom.svg" alt="border"></h1>
-        <div class="row">
-            <div class="about_us__description col-md-4">
-                <p> <span>ТОО «Фар-Ма Сервис»</span> выполняет все виды работ: от предпроектных исследований и согласований, до проектирования, строительства и сдачи объектов «под ключ».</p>
-                <p>Компания динамично развивается и всегда нацелена на достижение наивысшего результата. У нас есть опыт, средства, знания и масса идей.</p>
+        <h1 class="title">О Нас</h1>
+        <!-- <div class="row"> -->
+            <div class="about_us__description">
+                <div class="col-md-6">
+                    <p> <span>ТОО «Фар-Ма Сервис»</span> выполняет все виды работ: от предпроектных исследований и согласований, до проектирования, строительства и сдачи объектов «под ключ».</p>
+                    <p>Компания динамично развивается и всегда нацелена на достижение наивысшего результата. У нас есть опыт, средства, знания и масса идей.</p>
+                </div>
             </div>
-            <img src="img/about_us.svg" alt="about_us" class="about_us__img col-md-8">
+            <!-- <img src="img/about_us.svg" alt="about_us" class="about_us__img col-md-8"> -->
+        <!-- </div> -->
+    </div>
+</section>
+<section class="about_us2">
+    <div class="container">
+        <h1>Наши сильные стороны</h1>
+        <div class="row">
+            <div class="col-md-6 about_us2__description">
+                <img src="img/about_us2-left.svg" alt="about_us2">
+                <p class="about_us2__description-title">Сотрудничество с более чем 50 компаниями-производителями оборудования и технологий. Собственные конструкторские разработки</p>
+            </div>
+            <div class="col-md-6 about_us2__description">
+                <p class="about_us2__description-title">Опыт и комплексный подход к вопросу организации и вводу в эксплуатацию производственных объектов </p>
+                <p class="about_us2__description-subtitle">Обучение работе на поставленном оборудовании</p>
+                <img src="img/about_us2-right.svg" alt="about_us2">
+            </div>
         </div>
     </div>
 </section>
 <section class="works" id="works">
     <div class="container">
-        <h1 class="title">Наши работы <br> <img src="icons/border-bottom.svg" alt="border"></h1>
+        <h1 class="title">Наши работы</h1>
         <div class="works__content">
             <div class="works__content-item col-md-6">
                 <img src="img/works1.svg" alt="works1">
@@ -107,7 +147,7 @@
         </div>
     </div>
 </section>
-<section class="request">
+<section class="request" id="request">
     <div class="container">
         <div class="request__title">Оставьте заявку и мы обязательно свяжемся с вами!</div>
         <div class="request__form">
@@ -122,7 +162,7 @@
 <section class="footer">
     <div class="container">
         <div class="row">
-            <div class="footer__1 col-md-3">
+            <div class="footer__1 col-md-4">
                 <a href=""> <img src="icons/fms_logo.svg" alt="Farma-Service_logo"> </a>
                 <p>Инженерные решения проектных и технических задачдля различных отраслей промышленности</p>
             </div>

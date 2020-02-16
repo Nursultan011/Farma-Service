@@ -1,22 +1,45 @@
 @media screen and ( max-width: 600px )
-    .title
-        padding-bottom: 38px !important
     .header
-        div
-            ul
-                display: none
+        display: flex !important
+        justify-content: space-between !important
+        .row
+            justify-content: space-between !important
+            margin-right: 0 !important
+        .hamburger
+            margin-right: 13px !important
+            margin-top: 13px !important
+            display: block !important
+        .col-md-8
+            display: none !important
+           
     .main
         min-height: 100vh !important
         padding: 110px 0 180px 0 !important
+        h1
+            font-size: 32px !important
     
     .services
         &__content
+            justify-content: center !important
             &-item
                 margin-bottom: 30px !important
+                button
+                    display: block !important
 
     .about_us
         &__description
-            padding: 0px 15px 50px 15px !important
+            padding: 0px !important
+            // padding: 0px 15px 50px 15px !important
+            min-height: 85vh !important
+            background-size: 100% !important
+            background-position: center center !important
+            background-position-y: 95% !important
+            width: 100% !important
+    
+    .about_us2
+        &__description
+            img
+                width: 100% !important        
     
     .works
         &__content
@@ -52,11 +75,18 @@
         &__3
             margin-top: 80px !important
 
-@media screen and ( width: 414px )
+@media screen and ( width: 320px )
     .services
         &__content
-            justify-content: center !important
-    
+            &-item
+                p
+                    margin-bottom: 100px !important
+                button
+                    margin: 0 auto !important
+    .about_us
+        &__description
+            min-height: 110vh !important
+            background-position-y: 100% !important
                     
             
     
