@@ -2,6 +2,7 @@
     .header
         display: flex !important
         justify-content: space-between !important
+        padding: 20px 0 !important
         .row
             justify-content: space-between !important
             margin-right: 0 !important
@@ -41,7 +42,7 @@
             img
                 width: 100% !important        
     
-    .works
+    .works, .works2
         &__content
             justify-content: center !important
             .col-md-6
@@ -53,6 +54,19 @@
                     padding-left: 0 !important
                 img
                     width: 100% !important
+
+    .services_main
+        h1
+            font-size: 32px !important
+
+    .works2
+        margin-bottom: 110px !important
+
+    .types_services__description
+        margin-top: 60px !important
+        p
+            &:after
+                left: -15px !important
 
     .request
         padding: 100px 0 !important
@@ -92,8 +106,10 @@
             min-height: 110vh !important
             background-position-y: 100% !important
                     
-            
-    
+@media screen and ( height: 812px )
+    .about_us
+        &__description
+            min-height: 70vh !important
 
     
         

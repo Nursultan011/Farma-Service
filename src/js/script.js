@@ -22,7 +22,7 @@ $('.a1 a').click(function () {
 
 $(window).scroll(function(){
     var elemScrollTop = $(window).scrollTop();
-    var blockHeight = $('.header').height() + $('.main, .main2').height();
+    var blockHeight = $('.header').height() + $('.main, .services_main').height();
 
     if (! $('.active__menu').is(':visible')) {
         if (elemScrollTop >= (blockHeight / 2) ) {

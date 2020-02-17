@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Far-Ma Service</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -11,6 +12,125 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    
+    <section class="active__header">
+        <div class="active__menu">
+            <div class="a1">
+                <a href="#main" class="close_navbar">Главная</a>
+                <a href="#services" class="close_navbar">Услуги</a>
+                <a href="#about_us" class="close_navbar">О нас</a>
+                <a href="#works" class="close_navbar">Наши Работы</a>
+                <img src="icons/border_burger.svg" alt="border">
+                <a href="tel:+77019997660"> +7 (701) 999 76 60 </a>
+                <a href="mailto:support@blammo.kz"> blommo@gmail.com </a>
+            </div>
+            <a href="index.html" class="logo"> <img src="icons/fms_logo.svg" alt="FMS_logo"> </a>
+            <div class="close-btn">
+                <a href="javascript:void(0)"> <img src="icons/close.svg" alt="close"> </a>
+            </div>
+        </div>
+    </section> 
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <a href="index.html" class=""> <img src="icons/fms_logo.svg" alt="FMS_logo"> </a>
+            <div class="hamburger">
+                <img src="icons/burger.svg" alt="hamburger">
+            </div>
+            <div class="col-md-8 offset-2">
+                <ul class="a1">
+                    <a href="#services_main">Главная</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#about_us">О нас</a>
+                    <a href="#works">Наши работы</a>
+                    <img src="icons/border-navbar.svg" alt="border">
+                    <a href="tel:+77019997660"> +7 (701) 999 76 60</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="services_main main1" id="services_main">
+    <div class="container">
+        <h1 class="col-md-4 col-sm-12">Проектирование</h1>
+        <h2 class="col-md-4">Проектно - инжиниринговая строительно - монтажная компания</h2>
+        <a href="#request"><button>Оставить заявку</button></a>
+    </div>
+</section>
+<section class="types_services">
+    <div class="container">
+        <div class="row">
+            <div class="types_services__txt col-md-6">
+               <div class="types_services__txt-title">Основные виды услуг</div>
+               <p class="col-md-10"> <span>ТОО «Фар-Ма Сервис»</span> выполняет все виды работ: от предпроектных исследований и согласований, до проектирования, строительства и сдачи объектов «под ключ».</p> 
+            </div>
+            <div class="types_services__description col-md-6">
+                <div class="col-md-11">
+                    <p class="">Сопровождение заказчика при подготовке ТЗ</p>
+                    <p class="">Участие в базовых проектах в рамках адаптации и приведения к отечественным нормам</p>
+                    <p class="">Выполнение всех разделов Рабочей документации (РД)</p>
+                    <p class="">Комплексное выполнение рабочего проектирования по иностранным нормам и нормам заказчика</p>
+                    <p class="">Подготовка ПЗ</p>
+                    <p class="">Выполнение компоновочных, монтажных чертежей, в том числе в трехмерной среде</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="works2">
+    <div class="container">
+        <div class="works2__content">
+            <div class="works2__content-item col-md-6">
+                <img src="img/works6.svg" alt="works6">
+                <div>Генеральный план завода</div>
+            </div>
+            <div class="works2__content-item col-md-6">
+                <img src="img/works7.svg" alt="works7">
+                <div>Проектирование общежития в вахтовом городке</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="request" id="request">
+    <div class="container">
+        <div class="request__title">Оставьте заявку и мы обязательно свяжемся с вами!</div>
+        <div class="request__form">
+            <form action="">
+                <input name="name" required placeholder="Ваше имя" type="text" maxlength="20" class="name">
+                <input name="phone" required type="tel" placeholder="Ваш телефон" maxlength="20" class="phone">
+                <input type="submit" value="Отправить"> 
+            </form>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer__1 col-md-4">
+                <a href="index.html"> <img src="icons/fms_logo.svg" alt="Farma-Service_logo"> </a>
+                <p>Инженерные решения проектных и технических задачдля различных отраслей промышленности</p>
+            </div>
+            <div class="footer__2 offset-1 col-md-3">
+                <p>навигация по сайту</p>
+                <div class="a1">
+                    <a href="#services_main">Главная</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#about_us">О нас</a>
+                    <a href="#works">Наши работы</a>
+                </div>
+            </div>
+            <div class="footer__3 col-md-3 offset-1">
+                <div>
+                <p class="footer__3-title">контакты</p>
+                <a href="mailto:support@blammo.kz" class="footer__3-email"> <img src="icons/email.svg" alt="email"> info@far-maservice.com</a>
+                <a href="tel:+77019997660" class="footer__3-phone"> <img src="icons/phone.svg" alt="phone"> +7 (712) 252 11 35</a>
+                <a href="#" class="footer__3-location"> <img src="icons/location.svg" alt="location"> г. Атырау, ул Дружбы 7А</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>  
 </body>
 </html>
