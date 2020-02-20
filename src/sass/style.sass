@@ -44,7 +44,7 @@ body
         position: fixed
         z-index: 100
         .a1
-            margin-top: 120px 
+            margin-top: 20% 
             display: flex
             flex-direction: column
             align-items: center
@@ -81,6 +81,28 @@ body
             font-size: 17.5px
             font-weight: 400
             text-decoration: none
+            position: relative
+            // -webkit-transition: bottom 1s ease-out 0.5s
+            // -moz-transition: bottom 1s ease-out 0.5s
+            // -o-transition: bottom 1s ease-out 0.5s
+            // transition: bottom 1s ease-out 0.5s
+            -webkit-transition: 1s ease-out 0.5s
+            -moz-transition: 1s ease-out 0.5s
+            -o-transition: 1s ease-out 0.5s
+            transition: 1s ease-out 0.5s
+            &:hover
+                // -webkit-transition: 1s ease-out 0.5s
+                // -moz-transition: 1s ease-out 0.5s
+                // -o-transition: 1s ease-out 0.5s
+                // transition: 1s ease-out 0.5s
+                &:after
+                    content: ''
+                    border-top: 2px solid #2052B7
+                    bottom: -10px
+                    position: absolute
+                    left: 35%
+                    width: 20px
+
 
 .main
     background: url('../img/main_bg.svg') center (center / cover) no-repeat

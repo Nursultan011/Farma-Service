@@ -11,6 +11,8 @@ $(document).ready(function(){
     $('.close_navbar').on('click', function(){
         $('.active__menu').fadeOut();
     });
+
+    new WOW().init();
 });
 
 $('.a1 a').click(function () {
