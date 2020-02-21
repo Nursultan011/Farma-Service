@@ -1,8 +1,13 @@
 $(document).ready(function(){
+
     $('.close_navbar').on('click', function(){
         $('.active__menu').fadeOut();
     });
 
+    $('.hamburger').click(function (e) {
+        e.preventDefault();
+        $('.hamburger span').toggleClass('toggle-black');
+    })
     new WOW().init();
 });
 
