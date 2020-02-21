@@ -34,7 +34,7 @@ body
 
 .toggle-black
     background: white
-    
+
 .active__header
     .active__menu
         min-height: 100vh
@@ -76,12 +76,8 @@ body
         display: flex
         justify-content: space-around
         margin-top: 20px
-        a
-            color: #212121
-            font-size: 17.5px
-            font-weight: 400
-            text-decoration: none
-            position: relative
+        .border
+            transition: 0.5s all
             &:hover
                 &:after
                     content: ''
@@ -90,6 +86,15 @@ body
                     position: absolute
                     left: 35%
                     width: 20px
+        a
+            color: #212121
+            font-size: 17.5px
+            font-weight: 400
+            text-decoration: none
+            position: relative
+            
+    
+                        
 
 
 .main
