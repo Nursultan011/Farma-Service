@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
  <section class="active__header">
-        <div class="active__menu">
+        <div class="active__menu active__menu-left">
             <div class="a1">
                 <a href="#main" class="close_navbar">Главная</a>
                 <a href="#services" class="close_navbar">Услуги</a>
@@ -24,18 +25,12 @@
                 <a href="tel:+77122521135">+7 (712) 252 11 35</a>
                 <a href="mailto:info@far-maservice.com"> info@far-maservice.com </a>
             </div>
-            <div class="close-btn">
-                <a href="javascript:void(0)"> <img src="icons/close.svg" alt="close"> </a>
-            </div>
         </div>
     </section> 
 <header class="header">
     <div class="container">
         <div class="row">
             <a href="" class=""> <img src="icons/fms_logo.svg" alt="FMS_logo"> </a>
-            <div class="hamburger">
-                <img src="icons/burger.svg" alt="hamburger">
-            </div>
             <div class="col-md-8 offset-2">
                 <ul class="a1">
                     <a href="#main">Главная</a>
@@ -45,6 +40,11 @@
                     <img src="icons/border-navbar.svg" alt="border">
                     <a href="tel:+77122521135">+7 (712) 252 11 35</a>
                 </ul>
+            </div>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
         </div>
     </div>
@@ -66,7 +66,7 @@
             </a>
             <a href="services-2.html" class="services__content-item page2">
                 <p>Строительная деятельность</p>
-                <button>Подробнее</button>
+                <button class="btn">Подробнее</button>
             </a>
             <a href="services-3.html" class="services__content-item page3">
                 <p>Очистка РВС</p>
@@ -194,6 +194,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
 <script src="js/script.js"></script>  
 </body>
 </html>

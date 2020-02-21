@@ -1,0 +1,28 @@
+.hamburger {
+	position: absolute;
+	width: 24px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+	right: 2%;
+	top: 33px;
+	z-index: 1111;
+}
+.line {
+	position: absolute;
+	width: 24px;
+	height: 3px;
+	background: black;
+}
+.line:nth-child(2) {
+	top: 50%;
+}
+.line:nth-child(3) {
+	top: 100%;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked + label > div {
+  background: white;
+}

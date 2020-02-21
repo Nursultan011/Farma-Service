@@ -1,4 +1,10 @@
-@media screen and ( max-width: 600px )
+@media screen and ( max-width: 700px )
+    .active__header
+        .active__menu
+            left: -100% !important
+            transition: 0.5s !important
+            &-left
+                left: 0 !important
     .header
         display: flex !important
         justify-content: space-between !important
@@ -10,8 +16,6 @@
             justify-content: space-between !important
             margin-right: 0 !important
         .hamburger
-            margin-right: 13px !important
-            margin-top: 9px !important
             display: block !important
         .col-md-8
             display: none !important
@@ -100,6 +104,7 @@
                 justify-content: flex-end !important
                 input
                     margin-bottom: 35px !important
+                    width: 100% !important
                 input[type=submit]
                     width: 220px !important
                     margin-left: 0 !important
@@ -125,6 +130,68 @@
                     margin-bottom: 100px !important
                 button
                     margin: 0 auto !important
+
+@media screen and ( width: 768px)
+    .header
+        .hamburger
+            display: block !important
+            top: 45px !important
+        .col-md-8
+            display: none !important
+    .services
+        &__content
+            &-item
+                width: 206px !important
+                height: 296px !important
+                p
+                    margin-top: 133px !important
+                    font-size: 22px !important
+                button
+                    display: block !important
+                    margin-left: 15px !important
+                    margin-top: 50px !important
+                    padding: 12px 40px !important
+                .btn
+                    margin-top: 17px !important
+                    
+                        
+    .about_us2
+        &__description
+            background-size: 90% !important
+            padding-top: 442px !important
+        &__description2
+            background-size: 90% !important
+            padding-top: 95px !important
+    .works, .works2
+        &__content
+            &-item
+                img
+                    width: 100%
+
+@media screen and ( width: 1024px)
+    .header
+        .hamburger
+            display: block !important
+            top: 50px !important
+        .col-md-8
+            display: none !important
+    .main
+        padding-top: 350px !important
+        padding-bottom: 300px !important
+    .services
+        &__content
+            &-item
+                width: 280px !important
+                height: 505px !important
+                button
+                    display: block !important
+                    margin-left: 35px !important
+    .works, .works2
+        &__content
+            &-item
+                img
+                    width: 100%
+                        
 
 @media screen and ( min-width: 1920px )
     .main
