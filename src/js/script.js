@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    new WOW().init();
+
     $('.close_navbar').on('click', function(){
         $('.active__menu').fadeOut();
     });
@@ -7,8 +9,18 @@ $(document).ready(function(){
     $('.hamburger').click(function (e) {
         e.preventDefault();
         $('.hamburger span').toggleClass('toggle-black');
-    })
-    new WOW().init();
+    });
+
+    $('.hamburger').click(function(){
+        if ($(".active__menu").is(":visible") == true) {
+        $('.active__menu').hide();
+        }
+        else
+        {
+        $('.active__menu').show();
+        }
+        });
+
 });
 
 $('.a1 a').click(function () {
@@ -51,16 +63,5 @@ function menu ( e ) {
 }
 
 
-$('document').ready(function(){
-    $('.hamburger').click(function(){
-    if ($(".active__menu").is(":visible") == true) {
-    $('.active__menu').hide();
-    }
-    else
-    {
-    $('.active__menu').show();
-    }
-    });
-});
 
         
