@@ -13,13 +13,11 @@ $(document).ready(function(){
 
     $('.hamburger').click(function(){
         if ($(".active__menu").is(":visible") == true) {
-        $('.active__menu').hide();
+            $('.active__menu').hide();
+        } else {
+            $('.active__menu').show();
         }
-        else
-        {
-        $('.active__menu').show();
-        }
-        });
+    });
 
 });
 
@@ -48,6 +46,11 @@ $('.hamburger').click(function(){
 	var active = $(this).toggleClass('')[0].getAttribute('class');
 	(active == 'hamburger open') ? menu(1) : menu(0) 
 });
+
+// $('.active_menu .a1 a').click(function(e){
+//     e.preventDefault();
+//     $('.hamburger').removeClass('open');
+// });  
 
 function menu ( e ) {
 	e = (e == 1) ? 0 : 1;
