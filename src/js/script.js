@@ -11,6 +11,8 @@ $(document).ready(function(){
         $('.hamburger span').toggleClass('toggle-black');
     });
 
+    $('input[name=phone').mask("+7 (999) 999-99-99");
+
     $('.hamburger').click(function(){
         if ($(".active__menu").is(":visible") == true) {
             $('.active__menu').hide();
@@ -64,7 +66,6 @@ function menu ( e ) {
 	TweenMax.to($('.line:nth-child(2)'), 0.25, {scale: e});
 	TweenMax.to($('.line:nth-child(3)'), 0.25, {top: arr[1][e] + '%', rotation: -arr[2][e]});
 }
-
 
 
         

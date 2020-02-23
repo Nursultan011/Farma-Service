@@ -32,8 +32,13 @@
             justify-content: center !important
             &-item
                 margin-bottom: 30px !important
+                width: 345px !important
                 button
                     display: block !important
+                    margin-top: 60px !important
+                    margin-left: 18% !important
+                    margin-right: 18% !important
+        
 
     .about_us
         margin-top: 150px !important
@@ -98,6 +103,8 @@
 
     .request
         padding: 100px 0 !important
+        background: url('../img/request_bg-moblie.svg') no-repeat !important
+        background-size: cover !important
         &__form
             form
                 display: flex !important
@@ -141,19 +148,19 @@
     .services
         &__content
             &-item
-                width: 206px !important
+                width: 330px !important
                 height: 296px !important
                 p
                     margin-top: 133px !important
                     font-size: 22px !important
                 button
                     display: block !important
-                    margin-left: 15px !important
+                    margin-left: 23% !important
+                    margin-right: 23% !important
                     margin-top: 50px !important
                     padding: 12px 40px !important
                 .btn
-                    margin-top: 17px !important
-                    
+                    margin-top: 17px !important               
                         
     .about_us2
         &__description
@@ -181,18 +188,28 @@
     .services
         &__content
             &-item
-                width: 280px !important
-                height: 505px !important
+                width: 450px !important
                 button
                     display: block !important
-                    margin-left: 35px !important
+                    margin-left: 26% !important
+                    margin-right: 26% !important
     .works, .works2
         &__content
             &-item
                 img
                     width: 100%
                         
-
+@media screen and ( max-width: 1199px )
+    .header
+        .hamburger
+            display: block !important
+    .col-md-8
+            display: none !important
+    .works, .works2
+        &__content
+            &-item
+                img
+                    width: 100%
 @media screen and ( min-width: 1920px )
     .main
         padding: 355px 0 !important

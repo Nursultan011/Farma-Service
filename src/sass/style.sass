@@ -76,6 +76,8 @@ body
     .hamburger
         cursor: pointer
         display: none
+    .open
+        position: fixed
     ul
         display: flex
         justify-content: space-around
@@ -131,43 +133,52 @@ body
         display: flex
         justify-content: space-between
         flex-wrap: wrap
+        
         &-item
-            height: 505px
-            width: 350px
-            transition: 0.4s ease
+            height: 400px
+            width: 540px
+            
             p
                 color: #ffffff
                 text-align: center
                 font-size: 24px
                 font-weight: 600
-                margin-top: 236px
+                margin-top: 183px 
             button
-                margin-top: 100px
                 background-color: #e73224
                 padding: 13px 60px
                 border: none
                 color: #ffffff
                 font-size: 18px
                 font-weight: 500
-                margin-left: 65px
-                display: none
-                transition: .6s
+                margin-top: 60px
+                margin-left: 30%
+                display: block
+                opacity: 0
+                transition: 0.5s ease
             &:hover
-                transform: scale(1.1)
                 text-decoration: none
                 button
-                    display: block
+                    opacity: 1
+        
+               
                         
         .page1
             background: url('../img/services-1.svg') no-repeat
+            margin-bottom: 30px
+            background-size: 100%
         .page2
             background: url('../img/services-2.svg') no-repeat
+            margin-bottom: 30px
             p
-                margin-top: 216px
+                margin-top: 167px
             button
-                margin-top: 83px                
+                margin-top: 39px                
         .page3
             background: url('../img/services-3.svg') no-repeat
+        .page4
+            background: url('../img/services-4.svg') no-repeat
+
         
 .about_us
     margin-top: 200px
