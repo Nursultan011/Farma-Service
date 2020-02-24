@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 $(window).scroll(function(){
     var elemScrollTop = $(window).scrollTop();
-    var blockHeight = $('.header').height() + $('.main, .main2').height();
+    var blockHeight = $('.header').height() + $('.main, .main1, .main2, .main3, .main4').height();
 
     if (! $('.active__menu').is(':visible')) {
         if (elemScrollTop >= (blockHeight / 2) ) {
