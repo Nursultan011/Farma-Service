@@ -74,10 +74,43 @@ body
     padding: 20px 0
     transition: 0.3s ease-out
     .hamburger
-        cursor: pointer
+        top: 10px
         display: none
-    .open
-        position: fixed
+        width: 24px
+        height: 24px
+        position: relative
+        z-index: 1215
+        span
+            position: absolute
+            top: 50%
+            margin-top: -1px
+            width: 24px
+            height: 3px
+            background-color: black
+            &::before, &::after
+                content: ''
+                display: block
+                transition: 0.3s
+                position: absolute
+                top: 50%
+                margin-top: -1px
+                width: 24px
+                height: 3px
+                background-color: black
+            &::before
+                transform: translateY(-7px)
+            &::after
+                transform: translateY(7px)
+        &_active
+            position: fixed
+            top: 20px
+            right: 3%
+            span
+                height: 0
+                &::before
+                    transform: rotate(45deg)
+                &::after
+                    transform: rotate(-45deg)
     ul
         display: flex
         justify-content: space-around
