@@ -2,10 +2,10 @@ $(document).ready(function(){
 
     new WOW().init();
 
-    // $('.a3').on('click', function(e){
-    //     e.preventDefault();
-    //     $('.open').removeClass('open');
-    // });
+    $('.close_navbar').on('click', function(e){
+        e.preventDefault();
+        $('.open').removeClass('open');
+    });
 
     // $('.active__menu .a1 a').on('click', function(e){
     //     e.preventDefault();
@@ -62,8 +62,6 @@ function menu ( e ) {
 	TweenMax.to($('.line:nth-child(1)'), 0.25, {top: arr[0][e] + '%', rotation: arr[2][e]});
 	TweenMax.to($('.line:nth-child(2)'), 0.25, {scale: e});
 	TweenMax.to($('.line:nth-child(3)'), 0.25, {top: arr[1][e] + '%', rotation: -arr[2][e]});
-}
-
-document.getElementsByClassName('.main').style.minHeight = screen.height - 72 +"px"
+};
 
         
