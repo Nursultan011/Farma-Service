@@ -33,6 +33,19 @@ $(document).ready(function(){
 
 });
 
+$(window).scroll(function(){
+    var elemScrollTop = $(window).scrollTop();
+    var blockHeight = $('.header').height() + $('.main, .main2').height();
+
+    if (! $('.active__menu').is(':visible')) {
+        if (elemScrollTop >= (blockHeight / 2) ) {
+            $('.header').addClass('slick');
+        } else {
+            $('.header').removeClass('slick');
+        }
+    }
+});
+
 $('.a1 a').click(function () {
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
