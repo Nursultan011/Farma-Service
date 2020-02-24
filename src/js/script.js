@@ -2,10 +2,10 @@ $(document).ready(function(){
 
     new WOW().init();
 
-    $('.close_navbar').on('click', function(e){
-        e.preventDefault();
-        $('.open').removeClass('open');
-    });
+    // $('.close_navbar').on('click', function(e){
+    //     e.preventDefault();
+    //     $('.open').removeClass('open');
+    // });
 
     // $('.active__menu .a1 a').on('click', function(e){
     //     e.preventDefault();
