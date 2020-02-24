@@ -21,9 +21,3 @@
 	top: 100%;
 }
 
-input[type=checkbox] {
-  display: none;
-}
-input[type=checkbox]:checked + label > div {
-  background: white;
-}
