@@ -141,11 +141,6 @@
 
 @media screen and ( width: 768px)
     .header
-        .hamburger
-            display: block !important
-            top: 45px !important
-        .col-md-8
-            display: none !important
     .services
         &__content
             &-item
@@ -177,12 +172,6 @@
                     width: 100%
 
 @media screen and ( width: 1024px)
-    .header
-        .hamburger
-            display: block !important
-            top: 50px !important
-        .col-md-8
-            display: none !important
     .main
         padding-top: 350px !important
         padding-bottom: 300px !important
@@ -202,15 +191,24 @@
                         
 @media screen and ( max-width: 1199px )
     .header
-        .hamburger
-            display: block !important
-    .col-md-8
-            display: none !important
+        .offset-2
+            margin-left: 0 !important
     .works, .works2
         &__content
             &-item
                 img
                     width: 100%
+
+@media screen and ( max-width: 991px )
+    .header
+        .offset-2
+            margin-left: 0 !important
+            ul
+                padding-left: 0 !important
+                a
+                    font-size: 15px !important
+                    margin-right: 5px !important
+
 @media screen and ( min-width: 1920px )
     .main
         padding: 355px 0 !important
