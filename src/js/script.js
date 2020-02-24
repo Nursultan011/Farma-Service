@@ -26,8 +26,10 @@ $(document).ready(function(){
     $('.hamburger').click(function(){
         if ($(".active__menu").is(":visible") == true) {
             $('.active__menu').hide();
+            $('.header').removeClass("slick_active")
         } else {
             $('.active__menu').show();
+            $(".header").addClass("slick_active")
         }
     });
 
@@ -52,6 +54,8 @@ $(window).scroll(function(){
 });
 
 $('.a1 a').click(function () {
+    $(".hamburger").toggleClass('hamburger_active');
+    $('.header').removeClass("slick_active")
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
     }, 1500);
