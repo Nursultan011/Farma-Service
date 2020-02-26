@@ -54,6 +54,13 @@ $(window).scroll(function(){
 });
 
 $('.a1 a').click(function () {
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 1500);
+    return false;
+});
+
+$('.a2 a').click(function () {
     $(".hamburger").toggleClass('hamburger_active');
     $('.header').removeClass("slick_active")
     $('html, body').animate({
@@ -61,5 +68,7 @@ $('.a1 a').click(function () {
     }, 1500);
     return false;
 });
+
+
 
         
