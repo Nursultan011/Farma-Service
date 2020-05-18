@@ -1,4 +1,4 @@
-@media screen and ( max-width: 700px )
+@media screen and ( max-width: 767px )
     .active__header
         .active__menu
             left: -100% !important
@@ -141,8 +141,29 @@
                 button
                     margin: 0 auto !important
 
-@media screen and ( width: 768px)
+@media (min-width: 768px) and (max-width: 991px)
+    .active__header
+        .active__menu
+            left: -100% !important
+            transition: 0.5s !important
+            &-left
+                left: 0 !important
     .header
+        display: flex !important
+        justify-content: space-between !important
+        padding: 10px 0 !important
+        .slick_active
+            padding: 0 !important
+        a
+            img
+                width: 80% !important
+        .row
+            justify-content: space-between !important
+            margin-right: 0 !important
+        .hamburger
+            display: block !important
+        .col-md-8
+            display: none !important
     .services
         &__content
             &-item
@@ -173,43 +194,47 @@
                 img
                     width: 100%
 
-@media screen and ( width: 1024px)
-    .main
-        padding-top: 350px !important
-        padding-bottom: 300px !important
+// @media screen and ( width: 1024px)
+//     .main
+//         padding-top: 350px !important
+//         padding-bottom: 300px !important
+//     .services
+//         &__content
+//             &-item
+//                 width: 450px !important
+//                 button
+//                     display: block !important
+//                     margin-left: 26% !important
+//                     margin-right: 26% !important
+//     .works, .works2
+//         &__content
+//             &-item
+//                 img
+//                     width: 100%
+                        
+@media (min-width: 992px) and (max-width: 1199px)
+    .header
+        .offset-2
+            margin-left: 0 !important
+    .works, .works2
+        &__content
+            &-item
+                img
+                    width: 100%
     .services
         &__content
             &-item
                 width: 450px !important
-                button
-                    display: block !important
-                    margin-left: 26% !important
-                    margin-right: 26% !important
-    .works, .works2
-        &__content
-            &-item
-                img
-                    width: 100%
-                        
-@media screen and ( max-width: 1199px )
-    .header
-        .offset-2
-            margin-left: 0 !important
-    .works, .works2
-        &__content
-            &-item
-                img
-                    width: 100%
 
-@media screen and ( max-width: 991px )
-    .header
-        .offset-2
-            margin-left: 0 !important
-            ul
-                padding-left: 0 !important
-                a
-                    font-size: 15px !important
-                    margin-right: 5px !important
+// @media screen and ( max-width: 991px )
+//     .header
+//         .offset-2
+//             margin-left: 0 !important
+//             ul
+//                 padding-left: 0 !important
+//                 a
+//                     font-size: 15px !important
+//                     margin-right: 5px !important
 
 @media screen and ( min-width: 1920px )
     .main
